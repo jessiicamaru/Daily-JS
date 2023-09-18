@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: #221f2f;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #ed2ff0;
+    left: 15%;
+    top: 20%;
+    filter: blur(150px);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #22a8cd;
+    left: 80%;
+    top: 74%;
+    filter: blur(150px);
+}
+.container {
+    /* background-color: white; */
+    display: flex;
+    background: linear-gradient(45deg, #ed2ff0, #97c4d1);
+}
+
+.draw {
+    width: 500px;
+    margin: 50px;
+}
+
+.grid {
+    background-color: white;
+    display: inline-block;
+}
+
+.setting {
+    margin: 50px 0 50px 50px;
+    width: 200px;
+}
+
+.set .width,
+.set .row {
+    margin: 0 0 10px 0;
+}
+
+.setSize {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 10px;
+}
+
+.item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+}
+
+.item::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: solid 1px rgba(0, 255, 0, 0.4);
+    top: 0;
+    left: 0;
+}
+
+#color-input {
+    height: 24px;
+    width: 100%;
+}
+
+.control {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control-button {
+    width: 100%;
+    padding: 6px 12px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    transition: all 0.2s ease;
+}
+
+body {
+    display: flex;
+    background-color: #354750;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 800px;
+    height: 566px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5), -2px -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.right--container {
+    position: relative;
+}
+
+.left--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left--container > div {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8), -2px -2px 5px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease;
+}
+
+.left--container > div > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.left--container > div > img {
+    width: 100px;
+    height: 100px;
+    clip-path: circle();
+    z-index: 0;
+}
+
+.form-1 {
+    /* display: none; */
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    /* transform: translateX(calc(-100% - 16px)); */
+}
+
+.form-2 {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    transform: translateX(calc(100% + 16px));
+}
+
+.form-2 > p {
+    text-align: justify;
+}
+
+.form-2 > p > span {
+    font-weight: 600;
+    color: #354750;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.right--container,
+.left--container {
+    width: 50%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.left--container {
+    background: url(./img/jason-leung-ObWFLrkFvkY-unsplash.jpg);
+    background-size: cover;
+}
+
+.right--line > input,
+.right--line > span,
+.left--line > input,
+.left--line > span,
+.line {
+    width: 100%;
+}
+
+.right--line,
+.left--line {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.right--container {
+    padding: 24px;
+}
+
+.line {
+    width: 100%;
+    display: flex;
+    margin: 26px 0;
+}
+
+.line input {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: solid 2px #ccc;
+}
+
+.line input:focus {
+    border: solid 2px #354750;
+    outline: #354750;
+}
+
+.heading {
+    margin-left: 10px;
+}
+
+.verify,
+.submit {
+    padding: 8px 16px;
+    border: none;
+    background-color: #354750;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.verify:hover,
+.submit:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nest--input {
+    position: relative;
+}
+
+.nest--input .fa-circle-xmark,
+.nest--input .fa-circle-check {
+    display: none;
+}
+
+.nest--input.invalid {
+    color: red;
+}
+
+.nest--input.invalid .fa-circle-dot,
+.nest--input.invalid .fa-circle-check {
+    display: none;
+}
+
+.nest--input.invalid .fa-circle-xmark {
+    display: inline-block;
+}
+
+.nest--input.invalid > input {
+    border: solid 2px red;
+}
+
+.nest--input.valid {
+    color: green;
+}
+
+.nest--input.valid .fa-circle-xmark {
+    display: none;
+}
+
+.nest--input.valid > input {
+    border: solid 2px green;
+}
+
+.message {
+    position: absolute;
+    bottom: -35%;
+    left: 5%;
+    font-size: 11px;
+}

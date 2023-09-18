@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-side">
+                <div class="header">
+                    <h1 class="day-of-week">Friday</h1>
+                    <p class="date">August 5, 2023</p>
+                    <p class="location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Iran, IR</span>
+                    </p>
+                </div>
+                <div class="info">
+                    <i class="bx weather-icon"></i>
+                    <h1 class="temperature">26°C</h1>
+                    <h3 class="weather">sunny</h3>
+                </div>
+                <div class="gradient"></div>
+            </div>
+
+            <div class="right-side">
+                <div class="weather-discribe">
+                    <div>
+                        <p class="discribe"><b>PRECIPITATION</b></p>
+                        <p class="value">0.28%</p>
+                    </div>
+                    <div>
+                        <p class="discribe"><b>HUMIDITY</b></p>
+                        <p class="value">81%</p>
+                    </div>
+                    <div>
+                        <p class="discribe"><b>WIND SPEED</b></p>
+                        <p class="value">33 km/h</p>
+                    </div>
+                </div>
+
+                <ul class="next-four-days">
+                    <li class="next-day">
+                        <i class="bx bx-sun icon"></i>
+                        <span class="day">Mon</span>
+                        <span class="temperature"><b>23°C</b></span>
+                    </li>
+                    <li class="next-day">
+                        <i class="bx bx-sun icon"></i>
+                        <span class="day">Mon</span>
+                        <span class="temperature"><b>23°C</b></span>
+                    </li>
+                    <li class="next-day">
+                        <i class="bx bx-sun icon"></i>
+                        <span class="day">Mon</span>
+                        <span class="temperature"><b>23°C</b></span>
+                    </li>
+                    <li class="next-day">
+                        <i class="bx bx-sun icon"></i>
+                        <span class="day">Mon</span>
+                        <span class="temperature"><b>23°C</b></span>
+                    </li>
+                </ul>
+
+                <div class="search-line">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Your Location is..." />
+                </div>
+                <button class="search-location-button"><b>Search location</b></button>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
